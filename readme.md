@@ -62,3 +62,15 @@
         - http://localhost:3000/login
 
         lihat pada terminal akan ada API_KEY
+
+### 382. Level 3 - Hashing Passwords
+
+    Documentation: https://www.npmjs.com/package/md5
+    install md5 : npm i md5
+
+        pada browser : lakukan register dan login, masukan email dan password
+        - http://localhost:3000/register
+        - http://localhost:3000/login
+
+        jika berhasil akan diredirect kehalaman Secrets
+        lihat pada terminal akan ada password yang sama dengan di database
