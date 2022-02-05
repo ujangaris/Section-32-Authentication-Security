@@ -29,3 +29,21 @@
         jika berhasil akan diredirect kehalaman Secrets
 
         note: password masih belum aman!
+
+### 380. Level 2 - Database Encryption
+
+    mongoose-encryption
+    install mongoose encryption: npm i mongoose-encryption
+    Documentation:
+        - Usage =>  https://www.npmjs.com/package/mongoose-encryption
+        - Secret String Instead of Two Keys
+        - Encrypt Only Certain Fields
+
+
+        pada browser : lakukan register dan login, masukan email dan password
+        - http://localhost:3000/register
+        - http://localhost:3000/login
+
+        jika berhasil akan diredirect kehalaman Secrets
+
+        lihat pada database hasil register password ter-generate secara acak
