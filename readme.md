@@ -47,3 +47,18 @@
         jika berhasil akan diredirect kehalaman Secrets
 
         lihat pada database hasil register password ter-generate secara acak
+
+### 381. Using Environment Varibles to Keep Secrets Safe
+
+    Documentation: https://www.npmjs.com/package/dotenv
+    install dotenv : npm i dotenv
+
+    untuk menghilangkan beberapa document/file sewaktu hendak di push ke git/ akan di deploy:
+        Documentation: https://github.com/github/gitignore/blob/main/Node.gitignore
+        cara pengunaan tinggal copy lalu paste ke file .gitignore
+
+        pada browser : lakukan  login, masukan email dan password
+
+        - http://localhost:3000/login
+
+        lihat pada terminal akan ada API_KEY
