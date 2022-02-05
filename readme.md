@@ -12,3 +12,11 @@
                         - http://localhost:3000/
                         - http://localhost:3000/login
                         - http://localhost:3000/register
+
+### 378. Level 1 - Register Users with Username and Password | Register
+
+    install mongoose: npm i mongoose
+    Register:
+        pada browser : http://localhost:3000/register
+        lakukan register, masukan email dan password
+        jika berhasil akan diredirect kehalaman Secrets
