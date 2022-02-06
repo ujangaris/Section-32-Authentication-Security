@@ -171,7 +171,7 @@
     Your Client ID :    880579529802-jp9e72l636kq6u2h3upkkibpne54q8k4.apps.googleusercontent.com
     Your Client SECRETS :    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
 
-    note: jika bingung baca documentasi : 
+    note: jika bingung baca documentasi :
        - https://www.passportjs.org/tutorials/google/register/
        - https://www.passportjs.org/tutorials/google/configure/
        - https://www.passportjs.org/tutorials/google/session/
@@ -184,10 +184,19 @@
     agar tampilan login googlenyalebih keren, coba download:
         Documentation: https://lipis.github.io/bootstrap-social/
 
-    pengjian pada browser: 
+    pengjian pada browser:
     http://localhost:3000/register
         kemudian klik button sign up with google
     http://localhost:3000/login
         kemudian klik button sign with google
 
         jika berhasil akan di redirect ke halaman secret
+
+### 388. Finnishing Up the App - Letting Users Submit Secrets
+
+    pengjian pada browser:
+    http://localhost:3000/login
+        mengunakan akun yang login dengan google/ yang didaftarkan dengan form
+        setelah berhasil login , klik submit a secret
+        lalu ketikan sesuatu, jika berhasil akan diarahkan kehalaman secret
+        dan inputan anda behasil tampil pada browser.
