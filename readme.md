@@ -155,3 +155,39 @@
 
     pada browser lakukan logout : http://localhost:3000/secrets
     pada halaman secrets lakukan logout . jika berhasil maka akan di redirect ke halaman home.
+
+### 387. Level 6 - OAuth 2.0 & How to Implement Sign in with Google
+
+    Documentation: https://www.passportjs.org/packages/passport-google-oauth20/
+    install : npm install passport-google-oauth20
+
+    setalh install pada create aplication, klik Google Developer console kemudian isi:
+    name app: Secrets
+    Authorized Javascript origins: http://localhost:3000/auth/google
+    Authorized redirect URLis: http://localhost:3000/auth/google/secrets
+
+    nanti akan diberikan  OAuth client created:
+
+    Your Client ID :    880579529802-jp9e72l636kq6u2h3upkkibpne54q8k4.apps.googleusercontent.com
+    Your Client SECRETS :    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
+
+    note: jika bingung baca documentasi : 
+       - https://www.passportjs.org/tutorials/google/register/
+       - https://www.passportjs.org/tutorials/google/configure/
+       - https://www.passportjs.org/tutorials/google/session/
+
+    agar findOrCreate dapat digunakan kita perlu meng-install package:
+    Documentation: https://www.npmjs.com/package/mongoose-findorcreate
+        install : npm install mongoose-findorcreate
+
+
+    agar tampilan login googlenyalebih keren, coba download:
+        Documentation: https://lipis.github.io/bootstrap-social/
+
+    pengjian pada browser: 
+    http://localhost:3000/register
+        kemudian klik button sign up with google
+    http://localhost:3000/login
+        kemudian klik button sign with google
+
+        jika berhasil akan di redirect ke halaman secret
