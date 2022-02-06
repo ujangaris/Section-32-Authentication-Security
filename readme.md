@@ -142,3 +142,16 @@
         password : 123456
 
     jika berhasil akan diarahkan kehalaman secrets, dan sudah termasuk dengan cookiesnya , jd kalo kita masih belom logout kita buka kembali tidak perlu login .
+
+### 386. Level - 5 Using Passport.js to Add Cookies and Sessions | Login & Logout
+
+    pada browser lakukan login : http://localhost:3000/login
+        email : user@passportlocalmongoose.com
+        password : 123456
+
+    jika berhasil akan diarahkan kehalaman secrets, dan sudah termasuk dengan cookiesnya , jd kalo kita masih belom logout kita buka kembali tidak perlu login .
+    namun ada kelemahan jika server di load ulang akan meminta login kembali.
+    karna ini hanya basic dari passport passport-local passport-local-mongoose express-session, ada baiknya lebih di perdalam pembelajarannya pada documentasi setiap package!
+
+    pada browser lakukan logout : http://localhost:3000/secrets
+    pada halaman secrets lakukan logout . jika berhasil maka akan di redirect ke halaman home.
