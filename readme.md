@@ -74,3 +74,42 @@
 
         jika berhasil akan diredirect kehalaman Secrets
         lihat pada terminal akan ada password yang sama dengan di database
+
+### 383. Hacking Passwords 101
+
+    untuk mengetahui kekuatan kemanan password anda secara online:
+    http://password-checker.online-domain-tools.com/
+
+### 384. Level 4 - Salting and Hashing Passwords with bcrypt
+
+    Documentation: 
+        A Note on Rounds => - https://www.npmjs.com/package/bcrypt
+                            - https://github.com/kelektiv/node.bcrypt.js/issues/www.npmjs.com/package/bcrypt
+    instal bcrypt: npm i bcrypt
+
+    ┌──────────────────────────────────────────────────────────────────────────────┐
+    │ Untuk Register :                                                             │
+    │     Technique 2 (auto-gen a salt and hash):                                  │
+    │     bcrypt.hash(myPlaintextPassword, saltRounds, function(err, hash) {       │
+    │         // Store hash in your password DB.                                   │
+    │     });                                                                      │
+    └──────────────────────────────────────────────────────────────────────────────┘
+    lakukan register : http://localhost:3000/register
+
+                        email : "user@bcrypthash.com
+                        password : 123456
+
+    ┌──────────────────────────────────────────────────────────────────────────────┐
+    │ Untuk Login:                                                                 │
+    │         To check a password:                                                 │
+    │         // Load hash from your password DB.                                  │
+    │         bcrypt.compare(myPlaintextPassword, hash, function(err, result) {    │
+    │             // result == true                                                │
+    │         });                                                                  │
+    └──────────────────────────────────────────────────────────────────────────────┘
+    lakukan login : http://localhost:3000/login
+
+                        email : "user@bcrypthash.com
+                        password : 123456
+
+    jika login dan register berhasil akan diarahkan kehalaman secret
