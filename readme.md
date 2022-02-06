@@ -82,7 +82,7 @@
 
 ### 384. Level 4 - Salting and Hashing Passwords with bcrypt
 
-    Documentation: 
+    Documentation:
         A Note on Rounds => - https://www.npmjs.com/package/bcrypt
                             - https://github.com/kelektiv/node.bcrypt.js/issues/www.npmjs.com/package/bcrypt
     instal bcrypt: npm i bcrypt
@@ -113,3 +113,32 @@
                         password : 123456
 
     jika login dan register berhasil akan diarahkan kehalaman secret
+
+### 385. What are Cookies and Sessions?
+
+### 386. Level - 5 Using Passport.js to Add Cookies and Sessions | Register
+
+    install package:
+    npm i passport passport-local passport-local-mongoose express-session
+
+    Documentation:
+            - https://www.npmjs.com/package/express-session
+            - https://www.passportjs.org/docs/
+
+            ┌──────────────────────────────────────────────────────────────────────────────┐
+            │ https://www.npmjs.com/package/passport-local-mongoose                        │
+            │                 Simplified Passport/Passport-Local Configuration :           │
+            │                 const User = require('./models/user');                       │
+            │                                                                              │
+            │                 // CHANGE: USE "createStrategy" INSTEAD OF "authenticate"    │
+            │                 passport.use(User.createStrategy());                         │
+            │                                                                              │
+            │                 passport.serializeUser(User.serializeUser());                │
+            │                 passport.deserializeUser(User.deserializeUser());            │
+            └──────────────────────────────────────────────────────────────────────────────┘
+
+    pada browser lakukan Register : http://localhost:3000/register
+        email : user@passportlocalmongoose.com
+        password : 123456
+
+    jika berhasil akan diarahkan kehalaman secrets, dan sudah termasuk dengan cookiesnya , jd kalo kita masih belom logout kita buka kembali tidak perlu login .
